@@ -3,7 +3,7 @@ import socketserver, socket
 import ipaddress
 from typing import ValuesView
 # from TSSM import *
-from LTE.LTE_conecting import *
+#from LTE.LTE_conecting import *
 from SCZ_service import *
 print()
 

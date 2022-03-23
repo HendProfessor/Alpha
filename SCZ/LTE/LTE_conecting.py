@@ -1,5 +1,5 @@
 from time import *
-from LTE.LTE_MD5 import *
+from LTE_MD5 import *
 
 def LTE_encryption(LTE_input_data):
     """

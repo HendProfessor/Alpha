@@ -11,7 +11,7 @@ class connect_server(socketserver.TCPServer):
         print(hostadress)
         self.request.sendall(hostadress)
         return hostadress
-class send_data():
+def send_data():
     """
     Send Data
     """
@@ -40,4 +40,6 @@ class send_data():
             print("Connecting to server Error")
             socket.close()
             break
+
+
 
