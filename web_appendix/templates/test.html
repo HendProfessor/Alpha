@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Description" content="Enter your description here" />
+  <!--
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"/>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/message.css') }}"/>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}"/>
+  <link rel="icon" href="{{ url_for('static', filename='image/favicon.png') }}" type="image/png"/>
+  
+  <title>{{ title }}</title>
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+    <main>
+
+    {% block content %}
+            
+      <div class="chat">
+        <div class="chat-title">
+          <h1>Fabio Ottaviani</h1>
+          <h2>Supah</h2>
+          <figure class="avatar">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/156381/profile/profile-80.jpg" /></figure>
+        </div>
+        <div class="messages">
+          <div class="messages-content"></div>
+        </div>
+        <div class="message-box">
+          <input type="text" class="message-input" placeholder="Type message...">
+          <button type="submit" class="message-submit">Send</button>
+        </div>
+
+      </div>
+      <div class="bg"></div> 
+
+    {% endblock %}
+
+    </main>
+    
+    <footer class="modal-footer bg-dark ">
+        <div class="">
+                <p class="text-warning">Alpha version 0.05.0</p>
+            </div>
+    </footer>
+    <script type="text/javascript">
+      
+    </script>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/message.js') }}"></>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }}"></scrip>
+    
+  </body>
+  
+  </html>

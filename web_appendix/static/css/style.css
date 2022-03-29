@@ -1,0 +1,27 @@
+.bodyground {
+  background: #42275a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #734b6d,
+    #42275a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #734b6d,
+    #42275a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.message {
+  background: #97a6a0;
+  margin: 0.25%;
+  width: 100%;
+  height: 100%;
+}
+.get-message {
+  background: #2d3e40;
+  color: #e4f2e7;
+  width: 35%;
+  height: 100% auto;
+  text-align: center;
+  resize: none;
+}
